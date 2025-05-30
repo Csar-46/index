@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos por precio descendente</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../estilos/estilo.css" />
+
+  <!-- Librerías JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+  <script src="../js/efectos.js" defer></script>
+</head>
+
+<body>
+  <!-- Partículas animadas -->
+  <div id="animacion-contenedor"></div>
+
+  <!-- Menú de navegación con Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav d-flex flex-wrap justify-content-center gap-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="todos.html">Todos</a></li>
+        <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+        <li class="nav-item"><a class="nav-link" href="letraT.html">Empiezan por T</a></li>
+        <li class="nav-item"><a class="nav-link" href="desde2018.html">Desde 2018</a></li>
+        <li class="nav-item"><a class="nav-link" href="notaMayor4.html">Nota 4</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="precioDesc.html">Precio ↓</a></li>
+        <li class="nav-item"><a class="nav-link" href="generoAccion.html">Acción</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="text-center my-4">
+    <h1 class="text-info">Juegos ordenados por precio (de mayor a menor)</h1>
+  </header>
+
+  <!-- Tarjetas de juegos -->
+  <div class="container my-5">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Juego 1 -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card bg-dark text-light h-100 juego">
+          <img src="../img/tlou2.jpg" class="card-img-top" alt="The Last of Us Part II" />
+          <div class="card-body text-center">
+            <h5 class="card-title">The Last of Us Part II</h5>
+            <p class="card-text anyo-precio">2020 • <strong>69.99€</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juego 2 -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card bg-dark text-light h-100 juego">
+          <img src="../img/zelda.jpg" class="card-img-top" alt="Zelda" />
+          <div class="card-body text-center">
+            <h5 class="card-title">The Legend of Zelda: Breath of the Wild</h5>
+            <p class="card-text anyo-precio">2017 • <strong>59.99€</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juego 3 -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card bg-dark text-light h-100 juego">
+          <img src="../img/rdr2.jpg" class="card-img-top" alt="Red Dead Redemption 2" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Red Dead Redemption 2</h5>
+            <p class="card-text anyo-precio">2018 • <strong>59.99€</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juego 4 -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card bg-dark text-light h-100 juego">
+          <img src="../img/godofwar.jpg" class="card-img-top" alt="God of War" />
+          <div class="card-body text-center">
+            <h5 class="card-title">God of War</h5>
+            <p class="card-text anyo-precio">2018 • <strong>49.99€</strong></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Popup informativo -->
+  <div id="popup-mensaje" style="display: none;">
+    <div>¿Sabías que puedes filtrar los videojuegos por género y más?</div>
+    <button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+
+  <!-- Footer con mensaje animado -->
+  <footer id="hellobar">
+    <span>¡Terminamos ya el 20 de Mayo!</span>
+  </footer>
+
+  <!-- Bootstrap JS (necesario para colapsables y otros componentes) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

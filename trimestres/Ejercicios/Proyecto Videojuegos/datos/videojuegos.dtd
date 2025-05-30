@@ -1,0 +1,20 @@
+<!ELEMENT videojuegos (videojuego+)>
+<!ELEMENT videojuego (titulo, genero, imagen, descripcion, precio, precio_descuento, unidades_stock, unidades_vendidas, valor_opiniones, opiniones)>
+<!ATTLIST videojuego anyo CDATA #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT precio_descuento (#PCDATA)>
+<!ELEMENT unidades_stock (#PCDATA)>
+<!ELEMENT unidades_vendidas (#PCDATA)>
+<!ELEMENT valor_opiniones (#PCDATA)>
+
+<!ELEMENT opiniones (opinion+)>
+<!ELEMENT opinion (autor, fecha, nota, texto)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT nota (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>

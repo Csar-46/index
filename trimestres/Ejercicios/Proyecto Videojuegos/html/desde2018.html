@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos desde 2018</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../estilos/estilo.css" />
+
+  <!-- Librerías JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+  <script src="../js/efectos.js" defer></script>
+</head>
+
+<body>
+  <!-- Partículas visuales -->
+  <div id="animacion-contenedor"></div>
+
+  <!-- Barra de navegación Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav d-flex flex-wrap justify-content-center gap-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="todos.html">Todos</a></li>
+        <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+        <li class="nav-item"><a class="nav-link" href="letraT.html">Empiezan por T</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="desde2018.html">Desde 2018</a></li>
+        <li class="nav-item"><a class="nav-link" href="notaMayor4.html">Nota 4</a></li>
+        <li class="nav-item"><a class="nav-link" href="precioDesc.html">Precio ↓</a></li>
+        <li class="nav-item"><a class="nav-link" href="generoAccion.html">Acción</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Título -->
+  <header class="text-center my-4">
+    <h1 class="text-info">Juegos desde 2018</h1>
+  </header>
+
+  <!-- Contenido con tarjetas -->
+  <div class="container my-5">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Juego 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark text-light h-100 juego">
+          <img src="../img/godofwar.jpg" class="card-img-top" alt="God of War" />
+          <div class="card-body text-center">
+            <h5 class="card-title">God of War</h5>
+            <p class="card-text anyo-precio">2018 • <strong>49.99€</strong></p>
+            <div class="opiniones text-start mt-3">
+              <h6>Opiniones:</h6>
+              <p><strong>David Ruiz</strong> (2024-01-08) – Nota: 5<br>Una historia conmovedora con combate brutal.</p>
+              <p><strong>Laura Navas</strong> (2024-01-15) – Nota: 4.5<br>Excelente dirección artística.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juego 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark text-light h-100 juego">
+          <img src="../img/rdr2.jpg" class="card-img-top" alt="Red Dead Redemption 2" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Red Dead Redemption 2</h5>
+            <p class="card-text anyo-precio">2018 • <strong>59.99€</strong></p>
+            <div class="opiniones text-start mt-3">
+              <h6>Opiniones:</h6>
+              <p><strong>Sofía Martínez</strong> (2023-11-20) – Nota: 4.7<br>Un mundo abierto increíblemente detallado.</p>
+              <p><strong>Pedro González</strong> (2023-12-02) – Nota: 4.5<br>Historia profunda y envolvente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juego 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark text-light h-100 juego">
+          <img src="../img/tlou2.jpg" class="card-img-top" alt="The Last of Us Part II" />
+          <div class="card-body text-center">
+            <h5 class="card-title">The Last of Us Part II</h5>
+            <p class="card-text anyo-precio">2020 • <strong>69.99€</strong></p>
+            <div class="opiniones text-start mt-3">
+              <h6>Opiniones:</h6>
+              <p><strong>Carlos Vega</strong> (2023-06-10) – Nota: 4.0<br>Una narrativa emocional e intensa.</p>
+              <p><strong>María Díaz</strong> (2023-07-22) – Nota: 4.6<br>Visualmente impresionante y desafiante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Popup informativo -->
+  <div id="popup-mensaje" style="display: none;">
+    <div>¿Sabías que puedes filtrar los videojuegos por género y más?</div>
+    <button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+
+  <!-- Barra inferior animada -->
+  <footer id="hellobar">
+    <span>¡Terminamos ya el 20 de Mayo!</span>
+  </footer>
+
+  <!-- Bootstrap JS (solo si usas componentes interactivos) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solo los mejores juegos</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../estilos/estilo.css" />
+
+  <!-- Librerías JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+  <script src="../js/efectos.js" defer></script>
+</head>
+
+<body>
+  <!-- Efecto de partículas -->
+  <div id="animacion-contenedor"></div>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav d-flex flex-wrap justify-content-center gap-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="todos.html">Todos</a></li>
+        <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+        <li class="nav-item"><a class="nav-link" href="letraT.html">Empiezan por T</a></li>
+        <li class="nav-item"><a class="nav-link" href="desde2018.html">Desde 2018</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="notaMayor4.html">Nota 4</a></li>
+        <li class="nav-item"><a class="nav-link" href="precioDesc.html">Precio ↓</a></li>
+        <li class="nav-item"><a class="nav-link" href="generoAccion.html">Acción</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="text-center mt-4">
+    <h1 class="text-info">Solo promocionamos juegos TOP</h1>
+    <p class="eslogan">Todos estos videojuegos tienen una valoración superior a 4 de media</p>
+  </header>
+
+  <!-- Contenido sin imágenes -->
+  <div class="container my-5">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Juego 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark text-light h-100 p-3 juego">
+          <div class="info text-center">
+            <h5 class="card-title">The Legend of Zelda: Breath of the Wild</h5>
+            <p class="card-text anyo-precio">2017 • Valoración media: 4.9</p>
+          </div>
+          <div class="opiniones mt-3">
+            <h6>Opiniones:</h6>
+            <p><strong>Ana Torres</strong> (2023-04-12) – Nota: 5<br>Es una obra maestra.</p>
+            <p><strong>Lucas Pérez</strong> (2023-05-01) – Nota: 4.8<br>Gráficos hermosos y excelente jugabilidad.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juego 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark text-light h-100 p-3 juego">
+          <div class="info text-center">
+            <h5 class="card-title">God of War</h5>
+            <p class="card-text anyo-precio">2018 • Valoración media: 4.7</p>
+          </div>
+          <div class="opiniones mt-3">
+            <h6>Opiniones:</h6>
+            <p><strong>David Ruiz</strong> (2024-01-08) – Nota: 5<br>Una historia conmovedora con combate brutal.</p>
+            <p><strong>Laura Navas</strong> (2024-01-15) – Nota: 4.5<br>Excelente dirección artística.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juego 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark text-light h-100 p-3 juego">
+          <div class="info text-center">
+            <h5 class="card-title">Red Dead Redemption 2</h5>
+            <p class="card-text anyo-precio">2018 • Valoración media: 4.6</p>
+          </div>
+          <div class="opiniones mt-3">
+            <h6>Opiniones:</h6>
+            <p><strong>Sofía Martínez</strong> (2023-11-20) – Nota: 4.7<br>Un mundo abierto increíblemente detallado.</p>
+            <p><strong>Pedro González</strong> (2023-12-02) – Nota: 4.5<br>Historia profunda y envolvente.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Popup informativo -->
+  <div id="popup-mensaje" style="display: none;">
+    <div>¿Sabías que puedes filtrar los videojuegos por género y más?</div>
+    <button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+
+  <!-- Barra informativa inferior -->
+  <footer id="hellobar">
+    <span>¡Terminamos ya el 20 de Mayo!</span>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

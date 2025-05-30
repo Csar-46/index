@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videojuegos SYSTEM "videojuegos.dtd">
+<videojuegos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="videojuegos.xsd">
+
+  <videojuego anyo="2017">
+    <titulo>The Legend of Zelda: Breath of the Wild</titulo>
+    <genero>Aventura</genero>
+    <imagen>../img/zelda.jpg</imagen>
+    <descripcion>Una épica aventura en mundo abierto protagonizada por Link.</descripcion>
+    <precio>59.99</precio>
+    <precio_descuento>49.99</precio_descuento>
+    <unidades_stock>120</unidades_stock>
+    <unidades_vendidas>2000</unidades_vendidas>
+    <valor_opiniones>4.9</valor_opiniones>
+    <opiniones>
+      <opinion>
+        <autor>Ana Torres</autor>
+        <fecha>2023-04-12</fecha>
+        <nota>5</nota>
+        <texto>Es una obra maestra.</texto>
+      </opinion>
+      <opinion>
+        <autor>Lucas Pérez</autor>
+        <fecha>2023-05-01</fecha>
+        <nota>4.8</nota>
+        <texto>Gráficos hermosos y excelente jugabilidad.</texto>
+      </opinion>
+    </opiniones>
+  </videojuego>
+
+  <videojuego anyo="2018">
+    <titulo>God of War</titulo>
+    <genero>Acción</genero>
+    <imagen>../img/godofwar.jpg</imagen>
+    <descripcion>Kratos se enfrenta a los dioses nórdicos en esta emocionante historia.</descripcion>
+    <precio>49.99</precio>
+    <precio_descuento>39.99</precio_descuento>
+    <unidades_stock>90</unidades_stock>
+    <unidades_vendidas>1800</unidades_vendidas>
+    <valor_opiniones>4.7</valor_opiniones>
+    <opiniones>
+      <opinion>
+        <autor>David Ruiz</autor>
+        <fecha>2024-01-08</fecha>
+        <nota>5</nota>
+        <texto>Una historia conmovedora con combate brutal.</texto>
+      </opinion>
+      <opinion>
+        <autor>Laura Navas</autor>
+        <fecha>2024-01-15</fecha>
+        <nota>4.5</nota>
+        <texto>Excelente dirección artística.</texto>
+      </opinion>
+    </opiniones>
+  </videojuego>
+
+  <videojuego anyo="2018">
+    <titulo>Red Dead Redemption 2</titulo>
+    <genero>Aventura</genero>
+    <imagen>../img/rdr2.jpg</imagen>
+    <descripcion>Explora el salvaje oeste con Arthur Morgan.</descripcion>
+    <precio>59.99</precio>
+    <precio_descuento>44.99</precio_descuento>
+    <unidades_stock>100</unidades_stock>
+    <unidades_vendidas>2500</unidades_vendidas>
+    <valor_opiniones>4.6</valor_opiniones>
+    <opiniones>
+      <opinion>
+        <autor>Sofía Martínez</autor>
+        <fecha>2023-11-20</fecha>
+        <nota>4.7</nota>
+        <texto>Un mundo abierto increíblemente detallado.</texto>
+      </opinion>
+      <opinion>
+        <autor>Pedro González</autor>
+        <fecha>2023-12-02</fecha>
+        <nota>4.5</nota>
+        <texto>Historia profunda y envolvente.</texto>
+      </opinion>
+    </opiniones>
+  </videojuego>
+
+  <videojuego anyo="2020">
+    <titulo>The Last of Us Part II</titulo>
+    <genero>Survival Horror</genero>
+    <imagen>../img/tlou2.jpg</imagen>
+    <descripcion>Continúa la historia de Ellie en un mundo post-apocalíptico.</descripcion>
+    <precio>69.99</precio>
+    <precio_descuento>54.99</precio_descuento>
+    <unidades_stock>70</unidades_stock>
+    <unidades_vendidas>2100</unidades_vendidas>
+    <valor_opiniones>4.3</valor_opiniones>
+    <opiniones>
+      <opinion>
+        <autor>Carlos Vega</autor>
+        <fecha>2023-06-10</fecha>
+        <nota>4.0</nota>
+        <texto>Una narrativa emocional e intensa.</texto>
+      </opinion>
+      <opinion>
+        <autor>María Díaz</autor>
+        <fecha>2023-07-22</fecha>
+        <nota>4.6</nota>
+        <texto>Visualmente impresionante y desafiante.</texto>
+      </opinion>
+    </opiniones>
+  </videojuego>
+
+</videojuegos>

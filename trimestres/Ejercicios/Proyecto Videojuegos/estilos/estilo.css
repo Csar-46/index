@@ -1,0 +1,232 @@
+/* ======== ESTILOS GENERALES DE LA PÁGINA ======== */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif; /* Tipo de letra moderno */
+  background-color: #1e1b3a;                   /* Fondo oscuro violeta */
+  color: #ffffff;                              /* Texto blanco por defecto */
+  margin: 0;
+  padding: 0;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #00d4ff;      /* Azul celeste */
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* ======== BARRA DE NAVEGACIÓN ======== */
+nav {
+  background-color: #2e2b5f;                   /* Violeta oscuro */
+  padding: 16px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);        /* Sombra inferior */
+  position: sticky;
+  top: 0;
+  z-index: 1000;                               /* Siempre visible arriba */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 14px;                                   /* Separación entre enlaces */
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;                       /* Separación entre letras */
+  text-transform: uppercase;                   /* Mayúsculas */
+  background-color: transparent;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Efecto al pasar el ratón por los enlaces del menú */
+nav a:hover {
+  background-color: #443f95;
+  color: #00d4ff;
+}
+
+/* ======== REJILLA DE VIDEOJUEGOS ======== */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 35px 25px;
+}
+
+/* Cada tarjeta de videojuego */
+.juego {
+  width: 270px;
+  background-color: #2e2b5f;
+  border: 1px solid #443f95;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+/* Aumenta al pasar el ratón */
+.juego:hover {
+  transform: scale(1.03);
+}
+
+/* Imágenes dentro de cada tarjeta */
+.juego img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Información textual dentro de cada tarjeta */
+.info {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.info h2 {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+/* Año y precio */
+.anyo-precio {
+  font-size: 15px;
+  color: #00d4ff;
+}
+
+/* Opiniones (caja de comentarios) */
+.opiniones {
+  margin-top: 14px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #3b3570;
+  border: 1px solid #5551a5;
+  border-radius: 6px;
+  color: #e0e0ff;
+}
+
+.opiniones h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: #00d4ff;
+}
+
+.opiniones p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+/* Frase destacada en la página */
+.eslogan {
+  text-align: center;
+  font-size: 18px;
+  color: #00d4ff;
+  margin-top: -5px;
+}
+
+/* ======== CONTENEDOR PARA EFECTOS DE CLIC (PARTÍCULAS) ======== */
+#animacion-contenedor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Partícula individual */
+.particula {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: explotar 1.5s ease-out forwards;
+  pointer-events: none;
+}
+
+/* Animación que mueve y desaparece la partícula */
+@keyframes explotar {
+  to {
+    transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(0);
+    opacity: 0;
+  }
+}
+
+/* ======== POPUP PERSONALIZADO ======== */
+#popup-mensaje {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: #2e2b5f;
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  font-size: 18px;
+  z-index: 9999;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Clase para mostrar el popup con animación */
+#popup-mensaje.mostrar {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Botón dentro del popup */
+#popup-mensaje button {
+  margin-top: 15px;
+  background-color: #00d4ff;
+  color: #1e1b3a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ======== BARRA INFERIOR ANIMADA (HELLObar) ======== */
+#hellobar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00d4ff;
+  color: #1e1b3a;
+  font-weight: bold;
+  padding: 10px;
+  z-index: 2000;
+  overflow: hidden;
+}
+
+/* Texto en movimiento */
+#hellobar span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: deslizar-footer 12s linear infinite;
+}
+
+/* Animación de desplazamiento horizontal */
+@keyframes deslizar-footer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

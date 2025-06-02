@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frutas>
+    <fruta nombre="Litchi" variedad="Kway may pink" ciudadOrigen="Filipinas" colorFruto="Rosa" maduracion="Agosto" riego="Diario" Precio="3.5€" />
+    <fruta nombre="Logan" variedad="Champoo" ciudadOrigen="China" colorFruto="Marrón" maduracion="Octubre" riego="Diario" Precio="2.5€" />
+    <fruta nombre="Litchi" variedad="Mauritius" ciudadOrigen="Florida" colorFruto="Rojo" maduracion="Agosto" riego="Diario" Precio="3€" />
+</frutas>

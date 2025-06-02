@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interacción con botones</title>
+</head>
+<body>
+    <h1>Actividad 1: Cambiar fondo con botón</h1>
+    <button id="cambiarFondo">Cambiar fondo</button>
+
+    <h1>Actividad 2: Mostrar/Ocultar texto</h1>
+    <p id="texto" style="display:none">Texto oculto</p>
+    <button id="toggle">Mostrar/Ocultar</button>
+
+    <script>
+        // Cambiar el fondo al hacer clic en el botón
+        document.getElementById("cambiarFondo").addEventListener("click", () => {
+            document.body.style.backgroundColor = "lightblue";
+        });
+
+        // Mostrar u ocultar el texto al hacer clic en el botón
+        document.getElementById("toggle").addEventListener("click", () => {
+            let texto = document.getElementById("texto");
+            texto.style.display = texto.style.display === "none" ? "block" : "none";
+        });
+    </script>
+</body>
+</html>

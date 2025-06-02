@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actividades JavaScript</title>
+</head>
+<body>
+    <h1>Actividades Interactivas</h1>
+
+    <script>
+        // Actividad 1: Par o impar
+        let numero = Number(prompt("Introduce un número:"));
+        if (numero % 2 === 0) {
+            console.log("El número es par");
+        } else {
+            console.log("El número es impar");
+        }
+
+        // Actividad 2: Nota final
+        let nota = Number(prompt("Introduce tu calificación (0-10):"));
+        if (nota >= 9) {
+            console.log("Sobresaliente");
+        } else if (nota >= 7) {
+            console.log("Notable");
+        } else if (nota >= 5) {
+            console.log("Aprobado");
+        } else {
+            console.log("Suspenso");
+        }
+
+        // Actividad 3: Lista de nombres
+        let nombre = prompt("Escribe un nombre (o 'fin' para terminar):");
+        while (nombre.toLowerCase() !== "fin") {
+            console.log("Nombre ingresado:", nombre);
+            nombre = prompt("Escribe otro nombre (o 'fin' para terminar):");
+        }
+
+        // Actividad 4: Tabla de multiplicar del 5
+        for (let i = 1; i <= 10; i++) {
+            console.log(`5 x ${i} = ${5 * i}`);
+        }
+    </script>
+</body>
+</html>

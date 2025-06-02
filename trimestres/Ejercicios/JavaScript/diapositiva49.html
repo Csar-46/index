@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validar un formulario</title>
+</head>
+<body>
+    <h2>Validar un formulario</h2>
+    <p>Introduce un número entre 5 y 50</p>
+
+    <input id="numb">
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("numb").value;
+            let text;
+
+            if (isNaN(x) || x < 5 || x > 50) {
+                text = "Input not valid";
+            } else {
+                text = "Input OK";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+</html>

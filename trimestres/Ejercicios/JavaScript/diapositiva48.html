@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicios Interactivos</title>
+</head>
+<body>
+    <h1>Bienvenido a mi página</h1>
+    <p id="parrafo1">Este es el primer párrafo.</p>
+    <img src="ejemplo.jpg" alt="Imagen de ejemplo">
+    <p id="parrafo2">Este es el segundo párrafo.</p>
+
+    <button onclick="modificarParrafo()">Modificar primer párrafo</button>
+    <button onclick="ocultarSegundo()">Ocultar segundo párrafo</button>
+    <button onclick="traducirTexto()">Traducir al inglés</button>
+
+    <script>
+        function modificarParrafo() {
+            const parrafo = document.getElementById("parrafo1");
+            parrafo.style.fontSize = "36px";
+            parrafo.style.textAlign = "center";
+        }
+
+        function ocultarSegundo() {
+            document.getElementById("parrafo2").style.display = "none";
+        }
+
+        function traducirTexto() {
+            document.querySelector("h1").textContent = "Welcome to my page";
+            document.getElementById("parrafo1").textContent = "This is the first paragraph.";
+            document.getElementById("parrafo2").textContent = "This is the second paragraph.";
+        }
+    </script>
+</body>
+</html>

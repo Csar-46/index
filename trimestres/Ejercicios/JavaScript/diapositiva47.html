@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actividad 3: Formulario con resultado</title>
+</head>
+<body>
+    <h1>Formulario que saluda al usuario</h1>
+
+    <form id="formulario">
+        <input id="nombre" placeholder="Nombre">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", e => {
+            e.preventDefault(); // Evita que se recargue la página al enviar el formulario
+
+            let nombre = document.getElementById("nombre").value;
+            document.getElementById("resultado").textContent = `Hola ${nombre}`;
+        });
+    </script>
+</body>
+</html>

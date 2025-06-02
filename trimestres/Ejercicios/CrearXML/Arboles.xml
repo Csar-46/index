@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<árbol>
+    <especie>
+        <nombre>BAOBAB</nombre>
+        <variedad>adansonia</variedad>
+        <origen>Sudáfrica</origen>
+        <origen>Australia</origen>
+        <color_fruto>amarillo</color_fruto>
+        <maduración>15</maduración>
+        <maduración>20</maduración>
+        <riego>Mensual</riego>
+    </especie>
+</árbol>

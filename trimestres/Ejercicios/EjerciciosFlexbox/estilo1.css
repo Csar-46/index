@@ -1,0 +1,22 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid red;
+}
+
+.galeria img {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border: 5px solid black;
+}
+
+@media (min-with: 768px) {
+    .div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
